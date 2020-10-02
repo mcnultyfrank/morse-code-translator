@@ -8,7 +8,7 @@ const morsecode =[
     '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-',
     '-.--', '--..'
 ]
-
+ 
 translateButton.addEventListener("click", e => {
     for(i = 0; i < alphabet.length; i++){
         if (englishText.value.includes(alphabet[i])){

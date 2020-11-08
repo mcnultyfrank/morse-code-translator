@@ -9,18 +9,20 @@ const morsecode =[
     '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-',
     '-.--', '--..'
 ]
- 
 translateButton.addEventListener("click", e => {
     for(i = 0; i < alphabet.length; i++){
         if (englishText.value.includes(alphabet[i])){
-            document.querySelector(".output").innerHTML += morsecode[i];
+            document.querySelector(".output").innerHTML += morsecode[i] + " ";
         }
     }})
-translateMorseButton.addEventListener("click", e => {
-    for (i = 0; i < morsecode.length; i++){
-        if (englishText.value == morsecode[i]){
-            document.querySelector(".output").innerHTML += alphabet[i];
-        }
-    }
-})
+    clearButton.addEventListener("click", e => {
+        document.querySelector(".output").innerHTML = "";
+    })
+// translateMorseButton.addEventListener("click", e => {
+//     for (i = 0; i < morsecode.length; i++){
+//         if (englishText.value == morsecode[i]){
+//             document.querySelector(".output").innerHTML += alphabet[i];
+//         }
+//     }
+// })
 

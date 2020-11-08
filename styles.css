@@ -1,1 +1,68 @@
-l
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .translate__button {
+  font-size: 1.2rem;
+  height: 5vh;
+  cursor: pointer;
+  background-color: #2F3237;
+  color: #F5F5F5;
+  border: none;
+  width: 100vw;
+  transition: 0.2s;
+}
+header .translate__button:hover {
+  background-color: #5E5E60;
+}
+header .clear__button {
+  font-size: 1.2rem;
+  height: 5vh;
+  background-color: #313541;
+  color: #F5F5F5;
+  border: none;
+  width: 100vw;
+  transition: 0.2s;
+  cursor: pointer;
+}
+header .clear__button:hover {
+  background-color: #5E5E60;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+section .inputContainer {
+  height: 90vh;
+  width: 50vw;
+}
+section .inputContainer input {
+  background-color: #F5F5F5;
+  border: none;
+  height: 90vh;
+  width: 50vw;
+  padding: 5vw;
+  padding-bottom: 70vh;
+  font-size: 1.5rem;
+}
+section .outputContainer {
+  height: 90vh;
+  width: 50vw;
+  background-color: #F2F0E4;
+}
+section .outputContainer h2 {
+  font-size: 1.5rem;
+  padding-top: 17vw;
+}

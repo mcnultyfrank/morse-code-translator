@@ -6,18 +6,20 @@
     <link rel="stylesheet" href="styles.css">
     <title>Morse-code-translator</title>
 </head>
-<body>
-    <div class="container">
-    <h1>Morse code translator</h1>
-    <form>
-    <input type = "text" id = "user-text" class = "english-input"  name = "user-text" autocomplete="off" placeholder="">
-</form>
-    <button class = "translate__button">Translate English</button>
-    <button class = "translate__morse__button">Translate Morse</button>
-
-    <!-- <button class="clear__button">Clear</button> -->
-    <h2 class="output"></h2>
-    </div>
+    <body>
+        <header>
+            <button class = "translate__button">Translate English to Morse Code</button>
+            <button class = "clear__button">Clear</button>
+        </header>
+    <section>
+        <div class="inputContainer">
+            <input type = "text" id = "user-text" class = "english-input"  name = "user-text" autocomplete="off" placeholder="">
+        </div>
+        <div class="outputContainer">
+            <h2 class="output"></h2>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
